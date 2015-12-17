@@ -1,0 +1,33 @@
+{
+  "name": "react-native-yaml-styles",
+  "version": "1.0.0",
+  "description": "Stylesheets in YAML for React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frostney/react-native-yaml-styles.git"
+  },
+  "keywords": [
+    "react-native",
+    "yaml",
+    "yml",
+    "style",
+    "stylessheet"
+  ],
+  "author": "Johannes Stein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frostney/react-native-yaml-styles/issues"
+  },
+  "homepage": "https://github.com/frostney/react-native-yaml-styles#readme",
+  "dependencies": {
+    "change-object-case": "^0.1.0",
+    "js-yaml": "^3.4.6"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3"
+  }
+}
