@@ -6,8 +6,11 @@ var changeObjectCase = require('change-object-case');
 
 var YAMLStyleSheet = {
   create: function(styles) {
-    // TODO: Let's do some exception handling here
-    return StyleSheet.create(changeObjectCase(yaml.safeLoad(styles)));
+    try {
+      return StyleSheet.create(changeObjectCase(yaml.safeLoad(styles)));
+      } catch (e) {
+        console.log('Error while loading stylesheet: ' + e);
+      }
   }
 };
 
