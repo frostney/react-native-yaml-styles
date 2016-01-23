@@ -1,10 +1,11 @@
 {
   "name": "react-native-yaml-styles",
-  "version": "1.0.0",
+  "version": "1.0.0-beta1",
   "description": "Stylesheets in YAML for React Native",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -25,10 +26,11 @@
   },
   "homepage": "https://github.com/frostney/react-native-yaml-styles#readme",
   "dependencies": {
-    "change-object-case": "^0.1.0",
+    "change-case-object": "^2.0.0",
     "js-yaml": "^3.4.6"
   },
   "devDependencies": {
-    "eslint": "^1.10.3"
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^4.0.0"
   }
 }
