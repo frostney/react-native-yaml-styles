@@ -5,13 +5,19 @@ var yaml = require('js-yaml');
 var changeCaseObject = require('change-case-object');
 
 var YAMLStyleSheet = {
-  create: function(styles) {
+  create: function create(styles) {
+    var convertedStyles = {};
+
     try {
-      return StyleSheet.create(changeCaseObject.camelCase(yaml.safeLoad(styles)));
-      } catch (e) {
-        console.log('Error while loading stylesheet: ' + e);
-      }
-  }
+      convertedStyles = yaml.safeLoad(styles, {
+        json: true,
+      });
+    } catch (e) {
+      console.log('Error while loading stylesheet: ' + e);
+    }
+
+    return StyleSheet.create(changeCaseObject.camelCase(convertedStyles));
+  },
 };
 
 module.exports = YAMLStyleSheet;
