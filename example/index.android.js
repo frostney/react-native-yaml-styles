@@ -12,6 +12,8 @@ var {
   View,
 } = React;
 
+var YAMLStylessheet = require('react-native-yaml-styles');
+
 var Example = React.createClass({
   render: function() {
     return (
@@ -30,23 +32,20 @@ var Example = React.createClass({
   }
 });
 
-var styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+var styles = YAMLStyleSheet.create(`
+  container:
+    flex: 1
+    justify-content: center
+    align-items: center
+    background-color: '#f5fcff'
+  welcome:
+    font-size: 20
+    text-align: center
+    margin: 10
+  instructions:
+    text-align: center
+    color: '#333333'
+    margin-bottom: 5
+`);
 
 AppRegistry.registerComponent('Example', () => Example);
