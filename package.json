@@ -15,7 +15,8 @@
     "yaml",
     "yml",
     "style",
-    "stylessheet"
+    "styles",
+    "stylesheet"
   ],
   "author": "Johannes Stein",
   "license": "MIT",
