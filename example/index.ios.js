@@ -12,6 +12,8 @@ var {
   View,
 } = React;
 
+var YAMLStylessheet = require('react-native-yaml-styles');
+
 var Example = React.createClass({
   render: function() {
     return (
