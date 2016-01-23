@@ -1,6 +1,11 @@
 # react-native-yaml-styles
 If you prefer YAML over JSON/JavaScript styles in your React Native projects
 
+## Installation
+```
+$ npm install react-native-yaml-styles --save
+```
+
 ## Usage
 ```javascript
 var styles = YAMLStyleSheet.create(`
@@ -10,7 +15,7 @@ var styles = YAMLStyleSheet.create(`
 ```
 
 ## But... why?
-I was talking with @pichfl about how much better YAML is than JSON over an `.eslintrc` file at a [Web & Wine meetup](http://www.meetup.com/de/web-and-wine/). I made a snarky remark about maybe using YAML for styles instead of CSS or other options and well... here we are.
+I was talking with @pichfl about how much better YAML is than JSON over an `.eslintrc` file at a [Web & Wine meetup](http://www.meetup.com/web-and-wine/). I made a snarky remark about maybe using YAML for styles instead of CSS or other options and well... here we are.
 
 ## But... seriously... why?
 - React components are getting bigger and bigger, we want everything to be concise but only split it up if necessarily needed. So with a YAML-based stylesheet, we're getting rid of all the pesky braces we're saving about 30% of lines in total
