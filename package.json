@@ -1,6 +1,6 @@
 {
   "name": "react-native-yaml-styles",
-  "version": "1.0.0-beta1",
+  "version": "1.0.0",
   "description": "Stylesheets in YAML for React Native",
   "main": "index.js",
   "scripts": {
